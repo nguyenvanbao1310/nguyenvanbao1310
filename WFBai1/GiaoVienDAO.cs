@@ -26,7 +26,7 @@ namespace WFBai1
 
         public void ThemGV(GiaoVien them)
         {
-            //conn.Open();
+           
             string sqlStr = string.Format("INSERT INTO GiaoVien(Ten , Diachi, Cmnd, NgaySinh) VALUES ('{0}', '{1}', '{2}', '{3}')", them.Ten, them.DiaChi, them.Cmnd, them.NgaySinh.ToString("MM/dd/yyyy"));
             ThucThi(sqlStr);
             
